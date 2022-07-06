@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First steps with git</title>
+  </head>
+  <body></body>
+</html>
+<h1>First steps with git</h1>
+<ul>
+  <li>
+    <h2>Get Started with Bash in Windows</h2>
+    <p>
+      Press Windows key + X then click Command prompt, at the command prompt,
+      type: bash then hit Enter. If you want to be able to access the local file
+      system, press Windows key + X, Command Prompt (Admin) then type
+    </p>
+  </li>
+  <li>
+    <h2>change directories</h2>
+    <p>
+      For example, on a Unix based system, if you wanted to have your repository
+      in your Documents folder, you change directories as follows: cd Documents
+    </p>
+  </li>
+  <li>
+    <h2>copies your repository from GitHub to your local computer</h2>
+    <p>
+      Once you have navigated to the directory where you want to put your
+      repository, you can use:git clone https://github.com/URL-TO-REPO-HERE
+      (clone your newly created repository from GitHub to your local computer.
+      From your repository page on GitHub, click the green button labeled Clone
+      or download, and in the “Clone with HTTPs” section, copy the URL for your
+      repository.)
+    </p>
+    <p>
+      When you run git clone repo-path-here, You should see output like: Cloning
+      into 'test-repo'... remote: Counting objects: 5, done. remote: Compressing
+      objects: 100% (4/4), done. remote: Total 5 (delta 0), reused 0 (delta 0),
+      pack-reused 0 Unpacking objects: 100% (5/5), done. Checking
+      connectivity... done.
+    </p>
+  </li>
+
+  <li>
+    <h2>To verify that your repository now exists locally</h2>
+    <p>
+      To verify that your repository now exists locally, type ls in your
+      terminal. The ls command lists the files & folders available in your
+      current directory. You should see a directory with the same name as the
+      repository that you created previously on GitHub.
+    </p>
+  </li>
+  <li>
+    <h2>Tracking changes with git add and git commit</h2>
+    <ul>
+      <li>
+        <h3>see all of the files that exist in your GitHub repository:</h3>
+        <p>
+          If you list all the files in this directory (using ls la), you should
+          see all of the files that exist in your GitHub repository: ls -a .git
+          .gitignore LICENSE README.md Alternatively, we can view the local
+          repository in the finder (Mac), a Windows Explorer (Windows) window,
+          or GUI file browser (Linux). Simply open your file browser and
+          navigate to the new local repo. Important Tip The .git element is
+          listed when you use the ls -a command shows up is actually a directory
+          which will keep track of your changes (the commits that you make) in
+          git. Warning: Do not edit the files in this directory manually!
+        </p>
+      </li>
+      <li>
+        <h3>Edit a file in your repo</h3>
+        <p>
+          Once you are happy with your changes and have saved them, go back to
+          your terminal window and type git status and hit return to execute the
+          command.
+        </p>
+        <h3>git status</h3>
+        <p>
+            On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS D:\projects\t>
+</p>
+      </li>
+      <li>
+        <h3>Add and commit changes  </h3>
+        <ul>
+            <li>
+                <h4>Add files</h4>
+                <p>You can add an individual file or groups of files to git tracking. To add a single file, use
+
+git add file-name-here-with-extension</p>
+            </li>
+            <li>
+                <h4>
+                    Commit files
+                </h4>
+                <p>
+                    Once you are ready to make a snapshot of the current state of your repository, you can use git commit. The git commit command requires a commit message that describes the snapshot / changes that you made in that commit.
+                </p>
+            </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li></li>
+</ul>
